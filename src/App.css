@@ -4,6 +4,20 @@ body {
   margin: 0; /* Reset default margin */
   padding: 0; /* Reset default padding */
 }
+
+/* Apply common styles to both input types */
+input[type="text"],
+input[type="password"] {
+  flex: 2;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  margin-left: 5px;
+}
+
 .App {
   padding: 20px;
   border-radius: 10px;
@@ -21,6 +35,7 @@ body {
   flex-direction: row;
   align-items: center;
   margin-bottom: 10px;
+  
 }
 
 label {
@@ -28,15 +43,19 @@ label {
   text-align: right;
   margin-right: 10px;
 }
-
-input[type="text"],
-input[type="radio"] {
-  flex: 2;
-  padding: 5px;
-  border: 1px solid #ccc;
+/* Style the submit button */
+.loginbtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a transition effect */
 }
 
-input[type="radio"] {
-  margin-left: 5px;
+/* Style the submit button on hover */
+.loginbtn:hover {
+  background-color: #0056b3;
 }

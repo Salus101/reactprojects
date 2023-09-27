@@ -1,14 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import BrowserRouter, Routes, and Route
 import './index.css';
 import App from './App';
+import Welcome from './welcome';
+import Login from './login';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Router>
+      <Routes> {/* Use Routes instead of Switch */}
+        <Route path="/" element={<Welcome />} /> {/* Use element prop instead of component */}
+        <Route path="/app" element={<App />} />
+        <Route path="/login" element={<Login />} />
+        {/* Add other routes for your existing screens here */}
+      </Routes>
+    </Router>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
