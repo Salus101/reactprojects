@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import Welcome from './welcome';
 import Login from './login';
+import Calculator from './calculator';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,10 +14,11 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes> {/* Use Routes instead of Switch */}
-        <Route path="/" element={<Welcome />} /> {/* Use element prop instead of component */}
+        <Route path="/" element={<Welcome />} /> 
         <Route path="/app" element={<App />} />
         <Route path="/login" element={<Login />} />
-        {/* Add other routes for your existing screens here */}
+        <Route path="/calculator" element={<Calculator />} />
+
       </Routes>
     </Router>
   </React.StrictMode>,
