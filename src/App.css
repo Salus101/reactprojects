@@ -1,11 +1,10 @@
 body {
   text-align: center;
   background-color: lightgreen;
-  margin: 0; /* Reset default margin */
-  padding: 0; /* Reset default padding */
+  margin: 0;
+  padding: 0; 
 }
 
-/* Apply common styles to both input types */
 input[type="text"],
 input[type="password"] {
   flex: 2;
@@ -43,7 +42,7 @@ label {
   text-align: right;
   margin-right: 10px;
 }
-/* Style the submit button */
+
 .loginbtn {
   width: 100%;
   padding: 10px;
@@ -52,7 +51,7 @@ label {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Add a transition effect */
+  transition: background-color 0.3s ease; 
 }
 
 /* Style the submit button on hover */
